@@ -1,0 +1,344 @@
+/*RESET THE WEB BROWSER*/
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    margin:0;
+    padding:0;
+    width:100;
+    height:100vh;
+}
+
+hr{
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select{
+    vertical-align: middle;
+}
+
+/*HEADER STYLING
+body{
+    background-color:#f3f3f3;
+}
+Removed for links background color to show.*/
+main{
+    padding-top:100px;
+}
+header{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    background-color:#fff;
+    width:100%;
+    height:100px;
+}
+
+.header-brand{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:24;
+    font-weight: 900;
+    color:#111;
+    text-transform:uppercase;
+    display:block;
+    margin:0 auto;
+    text-align:center;
+    padding:20px 0;
+}
+
+header nav ul{
+    margin: 0 auto;
+    display:block;
+    width:fit-content;
+}
+
+header nav ul li{
+    display:inline-block;
+    float:left;
+    list-style:none;
+    padding:0 16px;
+}
+
+header nav ul li a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:16px;
+    color:#111;
+    text-transform:uppercase;
+}
+
+header .header-cases{
+    display: none;
+}
+
+/*This is where the website gets adjusted for desktop view(above 1000px*/
+@media only screen and (min-width:1000px){
+    .header-brand{
+        margin:31px 0;
+        text-align:left;
+        line-height:38px;
+        padding:0 20px 0 40px;
+        border-right:3px solid #111;
+        float:left;
+    }
+
+    header nav ul{
+        margin:20px 0px 0px 20px;
+        float:left;
+    }
+    
+    header nav ul li a{
+        line-height:60px;
+    }
+
+    header .header-cases{
+        display: block;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:16px;
+        color:#111;
+        text-transform:uppercase;
+        line-height:38px;
+        border:1px solid #111;
+        float:right;
+        margin-right:40px;
+        margin-top:30px;
+        padding:0px 20px;
+    }
+}
+
+/*Index*/
+.index-banner{
+    width:100%;
+    height:calc(100vh - 100px);
+    background: url(images/banner.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:table;      /*<----Aligning the text in the middle of the banner image*/
+}
+
+/*Aligning the tect in the middle of the banner image*/
+.vertical-center{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+.index-banner h2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:35px;
+    color:#fff;
+    text-align:center;
+    font-weight:900;
+    line-height:40px;
+    text-shadow: 3px 3px 6px #111;
+}
+
+.index-banner h1{
+    font-family:Geneva;
+    font-size:20px;
+    font-style:italic;
+    font-weight:150;
+    color:#fff;
+    text-align:center;
+    text-shadow: 2px 2px 6px #111;
+    line-height:30px;
+}
+
+/*LINKS*/
+.index-links div{
+    margin:16px 16px 0;
+    width:calc(100% - 32px);
+    height:100px;
+    background-color:#f2f2f2;
+}
+
+.index-links div h3{
+    font-family:Tahoma;
+    font-size:25px;
+    font-weight:600;
+    color:#111;
+    text-align:center;
+    line-height:100px;
+    text-transform: uppercase;
+}
+
+/*Styling for the BANNER & BOXLINKS*/
+@media only screen and (min-width:1000px){
+    .wrapper{
+        width:1000px;
+        margin: 0 auto;
+    }
+
+    .index-banner{
+        width:100%;
+        height:350px;
+        background: url(images/banner.jpg);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:cover;
+        display:table;      /*<----Aligning the text in the middle of the banner image*/
+    }
+
+    .index-banner h1{
+        display:block;
+        width:800px;
+        margin:0 auto;
+    }
+
+    .index-links{
+        overflow:hidden;
+    }
+
+    /*Adds images as a thumnail to the gallery div*/
+    .index-gallery-rectangle{
+        width:calc(50% - 20px) !important;
+        background: url(images/gallerythumb.jpg);
+        background-size:100%;
+        background-repeat: no-repeat;
+    }
+
+    .index-boxlink-sqaure{
+        width:calc(25% - 20px) !important;
+    }
+
+    .index-boxlink-rectangle{
+        width:calc(50% - 20px) !important;
+    }
+
+    .index-links div{
+        margin:20px 10px 0;
+        width:calc(100% - 32px);
+        height:230px;
+        background-color:#f2f2f2;
+        float:left;
+    }
+
+    .index-links div h3{
+        line-height:180px;
+    }
+}
+
+/*CASES PAGE*/
+.cases-links .cases-link{
+    width:230px;
+    height:230px;
+    margin:20px 10px 0;
+    background-color:#e3e3e3;
+    float:left;
+}
+
+.cases-links{
+    overflow:hidden;
+    margin-bottom:20px;
+}
+
+.cases-links  h2{
+    font-family:Tahoma;
+    font-size:25px;
+    font-weight:600;
+    color:#111;
+    text-transform: uppercase;
+}
+
+
+.cases-links .cases-link p{
+    padding-top:40%;
+    font-family:Tahoma;
+    font-size:16px;
+    font-weight:600;
+    color:#111;
+    text-align:center;
+    text-transform: uppercase;
+}
+
+/*CASE STYLING*/
+.case-img h2{
+    font-family:Tahoma;
+    font-size:25px;
+    font-weight:600;
+    color:#111;
+    text-transform: uppercase;
+    text-align:center;
+}
+
+.case-img div{
+    width:900px;
+    height:600p;
+    overflow:hidden;
+    display:block;
+    margin:0 auto;
+}
+
+.case-img .imgframe img{
+    width:100%;
+}
+
+/*FOOTER*/
+footer{
+    width:100%;
+    padding:20px 20px;
+    background-color:#111;
+    margin-top:20px;
+    display:block;
+    height:fit-content;
+    overflow:hidden;
+}
+
+footer ul{
+    width:fit-content;
+    float:left;
+    padding-left:20px;
+}
+
+footer ul li{
+    display:block;
+    list-style:none;
+}
+
+footer ul li a{
+    font-family:Verdana;
+    font-size:16px;
+    color:#fff;
+    line-height:30px;
+}
+
+.footer-links-cases{
+    display:none;
+}
+
+.footer-sm{
+    width:50px;
+    float:right;
+}
+
+.footer-sm img{
+    width:100%;
+    margin-bottom:10px;
+}
+
+/*Styling for the cases section of the FOOTER*/
+@media only screen and (min-width:1000px){
+    .footer-links-cases{
+        display:block;
+    }
+
+    footer ul li p{
+        font-family:Verdana;
+        color:#fff;
+        line-height:0px !important;
+    }
+
+    footer ul{
+        width:fit-content;
+        float:left;
+        padding-left:20px;
+        padding-right:30px;
+    }
+}
