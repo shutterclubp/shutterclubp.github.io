@@ -1,99 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="uft-8">
-        <title>ShutterClub</title>
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script>"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>"https://cdnjs.cloudflare.com/ajax/libs/magnific-popus.js/1.1.0/jquery.magnific-popup.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-<!------SectionOne--------------->
-        <div class="section-one">
-            <div class="content">                
-                <img src="Img/logo.png" class="logo">
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Creative Minds</title>
+</head>
+<body>
+    <!--This is the top-navbar section-->
+    <div class="topnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
 
-        
-<!-------What do we do--------->
-        <section class="about bg-light">
-            <div class="container-box">
-                <div class="grid-2">
-                    <div class="center">
-                        <img src="Icons/camera.png">
-                    </div>
-                <div class="text-box">
-                    <h1>What do we do</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquid eum animi cum? Assumenda sint saepe nostrum deleniti natus? Quibusdam quos praesentium vel! Culpa laudantium facilis architecto delectus iste quae reiciendis, ad assumenda amet dolores unde quas, dolor aliquid atque.</p>
-                </div>    
-                </div>
-            </div>
-        </section>
-<!------ImageGallery----->
-    <div class="gallery-section">
-        <div class="inner-width">
-            <h1>Some of our work</h1>
-            <div class="border"></div>
-            <div class="gallery">
-
-                <a href="Img/image.1.jpg" class="image">
-                    <img src="Img/image.1.jpg">
-                </a>
-                <a href="Img/image8.jpg" class="image">
-                    <img src="Img/image8.jpg">
-                </a>
-                <a href="Img/image.7.jpg" class="image">
-                    <img src="Img/image.7.jpg">
-                </a>
-                <a href="Img/slide-3.jpg" class="image">
-                    <img src="Img/slide-3.jpg">
-                </a>
-                <a href="Img/image.2.jpg" class="image">
-                    <img src="Img/image.2.jpg">
-                </a>
-                <a href="Img/image10.jpg" class="image">
-                    <img src="Img/image10.jpg">
-                </a>
-            </div>
+    <div class="home-banner">
+        <img id="homebanner-img" src="media/open-book1-create.jpeg" alt="Beach Notebook" style="width:100%;">
+        <div class="centered">
+            <h1 class="home-welcome">
+                Welcome to Local Creative Minds!
+            </h1>
         </div>
     </div>
 
-<!-------Contact Us---->
-    <div class="container">
-        <div class="contact-box">
-            <div class="left">
-                <h2>Contact Details</h2><br>
-                <li>
-                    <ul><img src="Icons/phone.svg" class="icons">061 596 7699</ul><br>
-                    <ul><img src="Icons/mail.svg" class="icons">rickrielOS@gmail.com</ul><br>
-                    <ul><img src="Icons/facebook .svg" class="icons">m.me/shutterClubZA</ul><br>
-                </li>
-            </div>
-            <div class="right">
-                <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="email" class="field" placeholder="Your Email">
-                <input type="number" class="field" placeholder="Your Phone Number">
-                <button class="btn">Send</button>
-            </div>
-        </div>
+
+    <h3>We here at LCM (Local Creative Minds) are passionate about finding and exposing local talent!</h4>
+    
+    <section class="main-par">
+    <p>Are you a singer or writer? Would you like for your voice to be heard across South Africa, 
+        even the entire world? Look no further, we are dedicated to voicing your thoughts. We believe in 
+        <strong>YOU</strong>.It is about that do to. Allow this to the be the stage that you have never
+        had the courage to step on. Feel free to reach out to other Local Minds in the search for you muse.
+    </p>
+</br>
+    <p>
+        We are a community of artists, growing and learning from one another. This is not just another
+        page for posting, no, this is your safe space, your time to shine and let hear your inner artist.
+    </p>
+</br>
+    <p>
+        As Albert Einstein once said, "<strong>Creativity</strong> is <strong>intelligence</strong> having fun". 
+        So let us all embrace the opportunity to have fun. 
+    </p>
+</br>
+    <p>
+        Go ahead put up the first of many posts and let the world hear your voice.
+    </p>
+</section>
+
+<section class="motivation">
+    <h3>Daily Inspirational Quote</h3>
+        <em><p id="daily">
+            "The creative adult is the child who survived." </br><strong>Ursula Leguin</strong>
+        </p></em>
+</section>
+
+<section class="extra">
+    <h3>Some more Text</h3>
+
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book. It has survived not only five centuries, but also the leap into 
+        electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+         Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+         Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+</section>
+
+    <div class="footer">
+        <p id="signage">
+            Created by Vincent Philander
+        </p>
     </div>
-<!-------Footer------>
-<footer class="bg-dark">
-    <p>&copy; ShutterClub | Designed by Nathan Jantjies </p>
-</footer>
-<script>
-    $(".gallery").magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery:{
-            enabled: true
-        }
-    });
-</script>
-    </body>
+</body>
 </html>

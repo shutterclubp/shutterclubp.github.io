@@ -1,0 +1,400 @@
+/*Colors scheme for the website Hex: 
+333D51 / D3AC2B / CBD0D8 / F4F3EA */
+
+/*sets the back-color of the website*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+h4{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: #F4F3EA;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333D51;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    font-family: Roboto;
+    float: left;
+    display: block;
+    color: #f3f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #D3AC2B;
+    color: #333D51;
+    transition: 0.3s;
+  }
+    
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+
+/*     Heading style     */
+h1{
+    color: #333D51;
+    font-family: Playfair Display;
+    display: block;
+    text-align: center;
+}
+
+.home-banner{    
+    position: relative;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+    border-radius: 10px 0.3;
+}
+
+#homebanner-img{
+    border-radius: 5px;
+}
+
+/*     Sub-Heading style     */
+h3{
+    color: black;
+    font-family: Playfair Display;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*     Special for Homepage Banner   */
+.home-welcome{
+    color: black;
+    font-family: Playfair Display;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/*     Paragraph Style     */
+p{
+    color: black;
+    font-family: Roboto;
+    display: block;
+    text-align: justify;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*    Quote of the day section   */
+.daily-quote{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    
+}
+
+#daily{
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+/*     Page footer     */
+.footer{
+    display: block;
+    background-color: #333D51;
+    }
+
+#signage{
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px 0px 5px 0px;
+    font-family: Roboto, sans-serif;
+    text-align: right;
+}
+
+/*    Screen re-sizing to laptop and desktop view   */
+@media only screen and (max-width: 500px){
+    .welcome{
+        font-size: small;
+        color: black;
+        font-family: Playfair Display;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+      }
+
+      .centered {
+        color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+    }
+}
+
+.extra{
+  margin: 10px;
+}
+
+.motivation{
+  border: solid #D3AC2B 1px;
+  border-radius:  5px;
+  margin: 20px 10px 20px 10px;
+}
+
+.main-par{
+  margin: 10px;
+}
+
+
+/*-----------------------------*/
+/*   CONTACT US PAGE     */
+.contact-banner {
+    position: relative;
+    text-align: center;
+    margin: 20px 10px 20px 10px;
+}
+
+/* Centered text */
+.centered {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submission{
+    align-items: center;
+}
+
+/*    contact-page entry form   */
+* {
+    box-sizing: border-box;
+  }
+  
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  /*     Selector Labels   */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: Roboto;
+  }
+  
+  /*      Submit button     */
+  input[type=submit] {
+    background-color: #333D51;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: Roboto;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #D3AC2B;
+    transition: 0.3s;
+  }
+  
+  .submission {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /*   Label column position and style    */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /*   Input section position and style   */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*  Re-size all table items - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+    }
+
+    .f-left, .f-middle, .f-right {
+        margin-top: 0;
+    }
+  }
+
+
+
+  /* ======================================== */
+  /*    Grid area for the featured artist images.   */
+  .grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "image1 image2 image3"
+    "featured-work featured-work featured-work"
+    "footer footer footer";
+}
+
+.image1{
+    grid-area: image1;
+    justify-self: center;
+    align-self: center;
+}
+
+.image2{
+    grid-area: image2;
+    justify-self: center;
+    align-self: center;
+}
+
+.image3{
+    grid-area: image3;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #333D51;
+    height: 30px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footer p {
+    display: block;
+    position: relative;
+    text-align: right;
+}
+
+.featured-work{
+  grid-area: featured-work;
+  justify-items: center;
+  align-items: center;
+
+}
+
+/*   This shapes the image for desktop resolution   */
+.image1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*   This shapes the image for desktop resolution   */
+.image2 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*   This shapes the image for desktop resolution   */
+.image3 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*  This is the wrapper for the grid for absolute positioning  */
+.container{
+    width: 100%;
+    position: absolute;
+}
+
+/*   Placing images below each other after screen resize  */
+@media only screen and (max-width: 650px){
+    .grid{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "image1"
+        "image2"
+        "image3"
+        "featured-work"
+        "footer";
+    }
+
+    /*  Reduces border-radius so images are square  */
+    .image1 img{
+        width: auto;
+        border-radius: 5px;
+    }
+    .image2 img{
+        width: auto;
+        border-radius: 5px;
+    }
+    .image3 img{
+        width: auto;
+        border-radius: 5px;
+    }
+    .image1{
+        grid-area: image1;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .image2{
+        grid-area: image2;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .image3{
+        grid-area: image3;
+        justify-self: center;
+        align-self: center;
+    }
+    .footer{
+        grid-area: footer;
+        background-color: #333D51;
+        height: 30px;
+        justify-items: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+}
+
+.featured-work p{
+  text-align: center;
+}

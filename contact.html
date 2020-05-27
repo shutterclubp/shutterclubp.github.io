@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+        <!--This is the top-navbar section-->
+        <div class="topnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+          </div>
+
+          <!--Contact Us Banner-->
+        <div class="contact-banner">
+            <img src="media/signup1-1.jpg" alt="Pen and Paper" style="width:100%;">
+            <div class="centered">
+                <h1>
+                    Contact Us
+                </h1>
+            </div>
+        </div>
+
+        <!--Sub-Heading-->
+        <h3>
+            Subtmit your Entry
+        </h3>   
+
+        <!-- Submission Section-->
+        <div class="submission">
+            <form action="vwphilander@gmailcom">
+
+            <!--Name Section-->
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+
+            <!--LastName Section-->
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+
+            <!--Gender Selection-->
+            <div class="row">
+              <div class="col-25">
+                <label for="gender">Gender</label>
+              </div>
+              <div class="col-75">
+                <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <!--Entry Section-->
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Entry</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+
+            <!--Submit button-->
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+            </form>
+        </div>
+
+        <!--This is the footer section-->
+        <div class="footer">
+            <p id="signage">
+                Created by Vincent Philander
+            </p>
+        </div>
+</body>
+</html>
